@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontak - Kafe Nusantara</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+header{
+    background-color: #6f4e37;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.container{
+    width: 80%;
+    margin: 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+h2{
+    color: #6f4e37;
+}
+
+input,
+textarea,
+select{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button{
+    background-color: #6f4e37;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #5a3d2a;
+}
+
+footer{
+    background-color: #6f4e37;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.radio-group,
+.checkbox-group{
+    margin-bottom: 15px;
+}
+
+.radio-group label,
+.checkbox-group label{
+    margin-right: 15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h1>Kafe Nusantara</h1>
+
+<nav>
+    <a href="index.html">Beranda</a>
+    <a href="layanan.html">Layanan</a>
+    <a href="kontak.html">Kontak</a>
+</nav>
+
+</header>
+
+<div class="container">
+
+<h2>Hubungi Kami</h2>
+
+<p>Silakan isi formulir berikut untuk reservasi atau pertanyaan.</p>
+
+<form>
+
+<fieldset>
+
+<legend>Form Reservasi</legend>
+
+<br>
+
+<label>Nama Lengkap:</label>
+<input type="text" placeholder="Masukkan nama">
+
+<label>Email:</label>
+<input type="email" placeholder="Masukkan email">
+
+<label>Nomor Telepon:</label>
+<input type="tel" placeholder="Masukkan nomor telepon">
+
+<label>Tanggal Kunjungan:</label>
+<input type="date">
+
+<label>Jam Kunjungan:</label>
+<input type="time">
+
+<br><br>
+
+<label>Jenis Reservasi:</label>
+
+<div class="radio-group">
+<input type="radio" name="jenis" id="individu">
+<label for="individu">Individu</label>
+
+<input type="radio" name="jenis" id="kelompok">
+<label for="kelompok">Kelompok</label>
+</div>
+
+<label>Fasilitas yang Diinginkan:</label>
+
+<div class="checkbox-group">
+<input type="checkbox" id="wifi">
+<label for="wifi">WiFi</label>
+
+<input type="checkbox" id="ac">
+<label for="ac">Ruangan AC</label>
+
+<input type="checkbox" id="musik">
+<label for="musik">Live Music</label>
+</div>
+
+<label>Jumlah Pengunjung:</label>
+<input type="number" min="1">
+
+<label>Pesan Tambahan:</label>
+<textarea rows="5" placeholder="Tulis pesan atau permintaan khusus"></textarea>
+
+<button type="submit">Kirim Reservasi</button>
+
+</fieldset>
+
+</form>
+
+</div>
+
+<footer>
+<p>&copy; 2026 Kafe Nusantara</p>
+</footer>
+
+</body>
+</html>
